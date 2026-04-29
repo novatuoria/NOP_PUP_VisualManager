@@ -74,7 +74,6 @@
 #include "pch.h"
 
 #include "NOP_PUP_VisualManager.h"
-#include <typeinfo>
 
 // ============================================================================
 // ВНУТРЕННИЕ ФУНКЦИИ КЛАССА / INSIDE CLASS FUNCTIONS
@@ -4112,8 +4111,6 @@ void CNPUP_VisualManager::OnDrawRibbonCategory
 	CRect rectCategory
 )
 {
-	TRACE(_T("Real Class Name: %hs\n"), typeid(*pCategory).name());
-
 	ColorTheme::ColorRibbonCategory clrRibbonCategory = m_currentTheme.m_ColorRibbonCategory;
 	ColorTheme::ParametrsDrawRibbon prmDrawRibbon = m_currentTheme.m_sParamRibbon;
 

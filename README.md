@@ -3,9 +3,9 @@
 # NOP PUP Visual Manager for MFC
 Visual Manager for Win32 applications based on the Microsoft Foundation Classes (MFC) library.  
   
-**Project started:** March 9, 2026
-**Current status:** Stable Alpha 0.1. The library is actively used in the development of a commercial project. Updates are released as the functionality of the main product evolves.
-**Compatibility:** Windows 10 / Windows 11
+**Project started:** March 9, 2026  
+**Current status:** Stable Alpha 0.1. The library is actively used in the development of a commercial project. Updates are released as the functionality of the main product evolves.  
+**Compatibility:** Windows 10 / Windows 11  
 **Known limitations:** Scrollbars, buttons, tree views, and standard dialogs use system rendering in the current version.  
   
 ---

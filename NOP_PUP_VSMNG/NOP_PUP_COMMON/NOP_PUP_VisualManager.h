@@ -46,10 +46,6 @@
 // меню, диалоги).
 // * Централизованное управление цветами через структуру конфигурации тем.
 // * Кастомная отрисовка с использованием GDI.
-// * Поддержка 18 встроенных цветовых схем с возможностью динамического 
-// переключения.
-// * Поддержка настройки пользовательских цветовых схем, передаваемых при 
-// инициализации класса
 //
 // ----------------------------------------------------------------------------
 //
@@ -65,10 +61,13 @@
 //    #include "NOP_PUP_VisualManager.h"
 //
 // 2. Установите желаемый стиль одной строкой (например, в InitInstance):
-//    CNPUP_VisualManager::SetStyle(NOP_PUP_STYLE::nopStyle_Blue);
+//    CNPUP_VisualManager::SetStyle(CNPUP_VisualManager::nopStyle_Blue);
+// 
+// 3. Вызовите метод: 
+// CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CNPUP_VisualManager));
 //
 // Поддержка Runtime: Смена тем происходит мгновенно без перезагрузки 
-// интерфейса. Достаточно повторного вызова SetStyle().
+// интерфейса. Достаточно повторного вызова SetStyle() и SetDefaultManager();
 //
 // ----------------------------------------------------------------------------
 //
@@ -89,11 +88,8 @@
 
 
 #pragma once
-#include <afxvisualmanageroffice2007.h>
 #include <afxautohidedocksite.h>
-#include <gdiplus.h>
-#pragma comment (lib,"Gdiplus.lib")
-#pragma comment(lib, "dwmapi.lib")
+#include <afxvisualmanageroffice2007.h>
 
 
 class CNPUP_VisualManager;
