@@ -4,8 +4,8 @@
 This plan is a record of current issues and areas requiring research.
 
 ### Current Tasks:
-- Finalizing the hierarchy: Complete the features from the CMFCBaseVisualManager base classes that did not make it into the 0.1 release.
-~- Advanced visual styles: Create classes for deeper visual styling (primarily layers between CMDIFrameWnd (and similar) and the user-inherited class for full non-client area support).~ (excluded. CNPUP_VisualManager will be used in the overall project - NOP PUP Controls Visual System for MFC)
+- Finalizing the hierarchy: Complete the features from the CMFCBaseVisualManager base classes that did not make it into the 0.1 release.  
+-  ~Advanced visual styles: Create classes for deeper visual styling (primarily layers between CMDIFrameWnd (and similar) and the user-inherited class for full non-client area support).~ (excluded. CNPUP_VisualManager will be used in the overall project - NOP PUP Controls Visual System for MFC)
 - System components: Address scrollbars, system buttons, standard dialogs, and all others.
 - Palette optimization: The current implementation works but requires a revision.
 - Runtime customization: Implement customization interfaces at runtime (the capability exists now, but proper palettes must be established first).
@@ -23,8 +23,8 @@ During the release preparation, many methods were refactored, and interesting ca
 Данный план — это фиксация текущих проблем и направлений, которые требуют исследования.   
 
 ### Текущие задачи:
-- Добивка иерархии: Доделать то, что не вошло в релиз 0.1 из возможностей базовых классов семейства CMFCBaseVisualManager
-~- Создать классы реализующие более глубокую проработку визуальных стилей (в основном это должны быть прослойки между CMDIFrameWnd (и иже с ними) и пользовательским классом наследником, для полноценного подхвата неклиентской области).~ (исключено. CNPUP_VisualManager будет использован в общем проекте - NOP PUP Controls Visual System for MFC)
+- Добивка иерархии: Доделать то, что не вошло в релиз 0.1 из возможностей базовых классов семейства CMFCBaseVisualManager  
+-  ~Создать классы реализующие более глубокую проработку визуальных стилей (в основном это должны быть прослойки между CMDIFrameWnd (и иже с ними) и пользовательским классом наследником, для полноценного подхвата неклиентской области).~ (исключено. CNPUP_VisualManager будет использован в общем проекте - NOP PUP Controls Visual System for MFC)
 - Добраться до скроллбаров, решить вопрос с ними, до системных кнопок, стандартных диалогов и всех прочих.
 - Оптимизация палитр: Текущая реализация работает, но требует пересмотра.
 - Реализовать интерфейсы кастомизации на уровне Runtime (возможность есть хоть прямо сейчас, но.. но надо сначала сделать нормальные палитры).
