@@ -1126,17 +1126,7 @@ void CNPUP_VisualManager::SetStyle
 )
 {
 	m_currentStyle = style;
-
-	DWORD  color = 0;
-	BOOL opaque = TRUE;
-	COLORREF clrSystemColor;
-
-	HRESULT hr = DwmGetColorizationColor(&color, &opaque);
-	if (SUCCEEDED(hr))
-	{
-		clrSystemColor = RGB((color >> 16), (color >> 8), (color >> 0));
-	}
-
+	
 	DefaultColorTheme &clrDefaultTheme = m_DefaultColor;
 
 	clrDefaultTheme.clr_RibbonFrame_Border = RGB(128, 128, 128);
