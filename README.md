@@ -9,6 +9,8 @@ Visual Manager for Win32 applications based on the Microsoft Foundation Classes 
 **Known limitations:** Scrollbars, buttons, tree views, and standard dialogs use system rendering in the current version.  
 **Project Goal:** The primary goal of this repository is to exhaust the maximum styling possibilities within the standard MFC delivery. Once the limit of what can be achieved with a single-class implementation is reached, further development will be transitioned to a new project: NOP PUP CVS (Controls Visual System). This repository will remain as a standalone, "single-file" solution for those who need a high-quality Dark Mode (as far as possible) with minimal integration effort.  
 
+***Feedback and contributions are welcome at any stage!***
+
 ---
 
 <details>
